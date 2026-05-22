@@ -21,6 +21,6 @@ npm run build
 
 ## 发布
 
-推送到 `main` 分支后，`.github/workflows/deploy.yml` 会自动构建并部署到 GitHub Pages。
+推送到 `main` 分支后，`.github/workflows/deploy.yml` 会自动构建并发布 `dist` 到 `gh-pages` 分支。
 
-如首次部署失败，请到仓库 Settings -> Pages 中确认 Source 选择为 GitHub Actions。
+首次部署需要到仓库 Settings -> Pages 中将 Source 选择为 `Deploy from a branch`，Branch 选择 `gh-pages` 和 `/ (root)`。
